@@ -43,7 +43,7 @@ internal sealed class FastDreamWarp : Module {
 			eventName = FsmEvent.Finished.Name,
 			toStateDefault = "Warp Charge",
 			toStateCustom = "Can Warp?",
-			shouldIntercept = () => BossSceneController.IsBossScene && ModuleManager.TryGetActiveModule<FastDreamWarp>(out _)
+			shouldIntercept = () => BossSceneController.IsBossScene
 		});
 	}
 }
